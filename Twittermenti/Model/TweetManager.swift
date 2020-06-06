@@ -67,6 +67,7 @@ struct TweetManager {
                 } else if sentiment == "Neg" {
                     sentimentScore -= 1
                 }
+                print(sentimentScore)
                 delegate?.updateUI(with: sentimentScore)
             }
             
